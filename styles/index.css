@@ -94,8 +94,6 @@ nav {
     }
 }
 
-
-
 @media screen and (max-width: 768px) {
     .ul-top {
         flex-direction: column;
