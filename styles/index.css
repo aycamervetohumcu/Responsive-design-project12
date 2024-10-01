@@ -5,8 +5,9 @@
 
 nav {
     display: flex; 
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -25,6 +26,7 @@ nav {
     margin: 0; 
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 .ul-top li {
     margin-left: 20px;
@@ -35,7 +37,12 @@ nav {
 }
 .ul-top li a:hover {
     color: rgb(26, 26, 26);
-    font-family: "Source Code Pro", monospace;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .title{
     display: flex;
@@ -44,27 +51,61 @@ nav {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 90px;
-    line-height: 102px;
+    font-size: 6vw;
+    line-height: 1.1;
     letter-spacing: -2px;
     color: #242635;
 }
-.info{
+.info {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 574;
-    height: 66;
-    font-family: 'Source Sans Pro';
+    max-width: 574px; 
+    width: 100%; 
+    margin: 0 auto; 
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 33px;
     color: #242635;
 }
+
 .image{
     display: flex;
     justify-content: center;
-
 }
-      
+.image img{
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 1024px ) {
+    .ul-top {
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: 72px;
+    }
+
+    .image img{
+        max-width: 80%;
+
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .ul-top {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .info{
+        font-size: 12px;
+    }
+}
