@@ -10,7 +10,7 @@ nav {
 }
 
 .logo {
-    height: 20px;
+    height: 36px;
     width: 91px;
     font-family:  "Aldrich", sans-serif;
     font-style: normal;
@@ -36,5 +36,35 @@ nav {
 .ul-top li a:hover {
     color: rgb(26, 26, 26);
     font-family: "Source Code Pro", monospace;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 102px;
+    letter-spacing: -2px;
+    color: #242635;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 574;
+    height: 66;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #242635;
+}
+.image{
+    display: flex;
+    justify-content: center;
+
 }
       
