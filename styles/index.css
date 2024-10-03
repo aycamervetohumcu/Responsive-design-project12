@@ -1,15 +1,15 @@
 .body{
     font-family: "Source Code Pro", monospace;
+    max-width: 1440px; 
+    width: 100%;
     padding: 10px 20px;
 }
-
 nav {
     display: flex; 
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-
 .logo {
     height: 36px;
     width: 91px;
@@ -36,7 +36,7 @@ nav {
     color:black; 
 }
 .ul-top li a:hover {
-    color: rgb(26, 26, 26);
+    color: rgb(87, 85, 85);
 }
 .content-container{
     display: flex;
