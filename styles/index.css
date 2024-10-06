@@ -6,7 +6,7 @@
 }
 nav {
     display: flex; 
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -70,7 +70,6 @@ nav {
     line-height: 33px;
     color: #242635;
 }
-
 .image{
     display: flex;
     justify-content: center;
@@ -79,9 +78,14 @@ nav {
     max-width: 100%;
     height: auto;
 }
+.icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
 @media screen and (max-width: 768px) {
     .ul-top {
-        flex-direction: column;
+        flex-direction: row;
         padding: 0;
     }
     .title {
@@ -91,12 +95,28 @@ nav {
 @media screen and (max-width: 320px) {
     .ul-top {
         flex-direction: column;
-        padding: 0;
+        display: none; 
+        width: 100%;
+        background-color: white;
+        position: absolute; 
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        border-top: 1px solid #eaeaea;
+    }
+    .ul-top li {
+        margin: 10px 0; 
+        text-align: center;
+    }
+    .icon {
+        display: block; 
+        position: absolute;
+        right: 20px; 
+        top: 20px;
     }
     .title {
         font-size: 36px;
     }
-
     .info {
         font-size: 12px;
     }
