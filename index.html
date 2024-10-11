@@ -32,6 +32,14 @@
             burger.style.display = "flex";
         }
     }
+           window.addEventListener('resize', function () {
+        let burger = document.getElementById("ul-top");
+        if (window.innerWidth > 768) {
+            burger.style.display = "flex";
+        } else if (burger.style.display === "flex") {
+                   burger.style.display = "none";
+    }
+});
         </script>
     </header>
 <div class="content-container">
